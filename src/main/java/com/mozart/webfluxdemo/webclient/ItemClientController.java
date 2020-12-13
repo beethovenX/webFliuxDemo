@@ -23,7 +23,7 @@ import reactor.core.publisher.Mono;
 @Slf4j
 public class ItemClientController {
 	
-	WebClient webClient = WebClient.create("http://localhost:8080");
+	WebClient webClient = WebClient.create("http://webfluxdemo-env-1.eba-tqxcqdhv.us-east-1.elasticbeanstalk.com");
 	
 	@GetMapping("/client/items")
 	public Flux<Item> getAllItems(){
